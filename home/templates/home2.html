@@ -1,0 +1,30 @@
+{% extends 'base2.html' %}
+
+
+
+{% block content %}
+
+<!--tables-->
+<div class="container">
+    <table class="table table-bordered border-primary">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Messages</th>
+          <th scope="col">Operation on Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for Contact in all_contact%}
+        <tr>
+          <td>{{Contact.name}}</td>
+          <td>{{Contact.content}}</td>
+          <td><a href="{% url 'detail_contact' Contact.id %}">detail</a>
+            <a href="{% url 'delete_contact' Contact.id %}">Delete</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+{% endblock content %}
+

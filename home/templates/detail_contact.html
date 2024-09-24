@@ -1,0 +1,17 @@
+{% extends 'base2.html' %}
+
+{% block title %}
+detail contact
+{% endblock title %}
+
+{% block content  %}
+<div class="container" >
+    <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">Name &nbsp; &nbsp; &nbsp;{{contact.name}}</li>
+        <li class="list-group-item">Email    &nbsp; &nbsp; &nbsp; <a href="https://www.{{contact.email}}" class="gmail">{{contact.email}}</a></li>
+        <li class="list-group-item">Phone    &nbsp; &nbsp; &nbsp;{{contact.number}}</li>
+        <li class="list-group-item">Messages &nbsp; &nbsp; &nbsp;{{contact.content}}</li>
+      </ul>
+ <a href="{% url 'home2' %}" class="btn btn-primary">Go home</a>
+</div>
+  {% endblock content %}

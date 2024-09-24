@@ -1,0 +1,27 @@
+{% extends 'base2.html' %}
+
+{% block title %}
+delete region
+{% endblock title %}
+
+{% block content  %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="card text-white bg-secondary mb-3" style="max-width: 600px;">
+        <div class="row">
+            <div class="col-4">
+                <h2>{{contact.name}}<h2>
+            </div>
+                <div class="col-8">
+                    <div class="card-body">
+                     <h5 class="card-title">Are you sue you want to delete  {{contact.name}}?</h5>
+                    <input type="submit" value="Delete" class="btn btn-danger">
+                     <a href="{% url 'home2'%}" class="btn btn-success">Cancel</a>
+                </div>
+            </div> 
+        </div>
+       </div>
+  
+</form>
+
+  {% endblock content %}
