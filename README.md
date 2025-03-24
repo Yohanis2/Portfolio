@@ -18,7 +18,7 @@ Personal portfolio website made with Django framework in the backend, and with C
 ## Screenshots
 
 
-![image]([https://user-images.githubusercontent.com/104616403/Screenshot 2025-03-18 130657.png](https://github.com/Yohanis2/Portfolio/blob/c96844d16a47cb46f70a2ded33ce7f44c768bedd/Screenshot%202025-03-18%20130657.png))
+![image](https://github.com/Yohanis2/Portfolio/blob/c96844d16a47cb46f70a2ded33ce7f44c768bedd/Screenshot%202025-03-18%20130657.png))
 
 ## 🔗 Links
 
